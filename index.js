@@ -432,24 +432,24 @@ document.writeln("<h3>Done</h3>");
 
 // ******* QUESTION-14 ************
 document.writeln("<h2>Question-14</h2>");
-let customerName = prompt("Enter your name:");
-let customer_Month = prompt("Enter your Current Month:");
-let Num_Units = parseFloat(prompt("Enter your Number of units:"));
-let Charges_unit = parseFloat(prompt("Enter your charges per unit:"));
-let net_Amount = Num_Units * Charges_unit;
-let late_Payment = 350;
-let gross_Amount = net_Amount + late_Payment;
-document.writeln(
-  `<h3>K-Electric Bill</h3>
-  Customer Name: <b>${customerName}</b> <br>
-  Current Month: <b>${customer_Month}</b> <br>
-  Number of Units: <b>${Num_Units}</b> <br>
-  Charges per Unit: <b>${Charges_unit}</b> <br>
-  Net Amount Payable (within Due Date): <b>${net_Amount}</b> <br>
-  Late Payment Surcharge: <b>${late_Payment}</b> <br>
-  Gross Amount Payable (after Due Date) : <b>${gross_Amount}</b> <br>
-  `,
-);
+// let customerName = prompt("Enter your name:");
+// let customer_Month = prompt("Enter your Current Month:");
+// let Num_Units = parseFloat(prompt("Enter your Number of units:"));
+// let Charges_unit = parseFloat(prompt("Enter your charges per unit:"));
+// let net_Amount = Num_Units * Charges_unit;
+// let late_Payment = 350;
+// let gross_Amount = net_Amount + late_Payment;
+// document.writeln(
+//   `<h3>K-Electric Bill</h3>
+//   Customer Name: <b>${customerName}</b> <br>
+//   Current Month: <b>${customer_Month}</b> <br>
+//   Number of Units: <b>${Num_Units}</b> <br>
+//   Charges per Unit: <b>${Charges_unit}</b> <br>
+//   Net Amount Payable (within Due Date): <b>${net_Amount}</b> <br>
+//   Late Payment Surcharge: <b>${late_Payment}</b> <br>
+//   Gross Amount Payable (after Due Date) : <b>${gross_Amount}</b> <br>
+//   `,
+// );
 
 document.writeln("<h3>Done</h3>");
 
@@ -461,8 +461,48 @@ document.writeln(
 );
 
 // ********** ASSIGNMENT # 35 - 38 **********
-// ******* QUESTION- ************
-document.writeln("<h2>Question-</h2>");
+// ******* QUESTION-1 ************
+document.writeln("<h2>Question-1</h2>");
+
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-2 ************
+document.writeln("<h2>Question-2</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-3 ************
+document.writeln("<h2>Question-3</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-4 ************
+document.writeln("<h2>Question-4  </h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-5 ************
+document.writeln("<h2>Question-5</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-6 ************
+document.writeln("<h2>Question-6</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-7 ************
+document.writeln("<h2>Question-7</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-8 ************
+document.writeln("<h2>Question-8</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-9 ************
+document.writeln("<h2>Question-9</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-10 ************
+document.writeln("<h2>Question-10</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-11 ************
+document.writeln("<h2>Question-11</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-12 ************
+document.writeln("<h2>Question-12</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-13 ************
+document.writeln("<h2>Question-13</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-14 ************
+document.writeln("<h2>Question-14</h2>");
 document.writeln("<h3>Done</h3>");
 
 // ********** ASSIGNMENT # 35 - 38 Completed!! **********
