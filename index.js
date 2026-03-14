@@ -185,11 +185,12 @@ console.log(`There are ${flag} occurence(s) of "the"`);
 
 document.writeln("<h3>Done</h3>");
 
-
 // ********** ASSIGNMENT # 21 - 25 Completed!! **********
 // ----------------------------------------------------------
 //////////////////////////////////
-document.writeln( `<br> /////////////////////////////completed assignment 21 - 25///////////////////////////////////////////`)
+document.writeln(
+  `<br> /////////////////////////////completed assignment 21 - 25///////////////////////////////////////////`,
+);
 // ********** ASSIGNMENT # 26 - 30 **********
 // ******* QUESTION-1 ************
 document.writeln("<h2>Question-1</h2>");
@@ -213,9 +214,7 @@ document.writeln("<h3>Done</h3>");
 
 document.writeln("<h2>Question-3 </h2>");
 let Number = -4;
-document.writeln(
-  `The absolute value of ${Number} is ${Math.abs(Number)}`,
-);
+document.writeln(`The absolute value of ${Number} is ${Math.abs(Number)}`);
 document.writeln("<h3>Done</h3>");
 
 // ******* QUESTION-4 ************
@@ -239,8 +238,8 @@ document.writeln("<h3>Done</h3>");
 // ******* QUESTION-6 ************
 document.writeln("<h2>Question-6</h2>");
 
-let random_Number = Math.floor(Math.random() * 100) + 1
-document.writeln("random number between 1 and 100 : " + random_Number)
+let random_Number = Math.floor(Math.random() * 100) + 1;
+document.writeln("random number between 1 and 100 : " + random_Number);
 document.writeln("<h3>Done</h3>");
 
 // ******* QUESTION-7 ************
@@ -250,7 +249,6 @@ document.writeln("<h2>Question-7</h2>");
 // let weight = parseFloat(user_weight)
 // alert(`The weight of user is ${weight} kilograms`)
 document.writeln("<h3>Done</h3>");
-
 
 // ******* QUESTION-8 ************
 
@@ -270,14 +268,16 @@ document.writeln("<h3>Done</h3>");
 // ********** ASSIGNMENT # 26 - 30 Completed!! **********
 // ----------------------------------------------------------
 //////////////////////////////////
-document.writeln( `<br> /////////////////////////////completed assignment 26 - 30///////////////////////////////////////////`)
+document.writeln(
+  `<br> /////////////////////////////completed assignment 26 - 30///////////////////////////////////////////`,
+);
 
 // ********** ASSIGNMENT # 31 - 34  **********
 // ******* QUESTION-1 ************
 document.writeln("<h2>Question-1</h2>");
 
 let currentDate = new Date();
-document.writeln( currentDate);
+document.writeln(currentDate);
 
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-2 ************
@@ -294,7 +294,7 @@ let monthNames = [
   "September",
   "October",
   "November",
-  "December"
+  "December",
 ];
 let currentMonth = currentDate.getMonth();
 document.writeln(`Current Month: ${monthNames[currentMonth]}`);
@@ -312,7 +312,7 @@ document.writeln("<h2>Question-3</h2>");
 //   "Saturday"
 // ];
 // let currentDay = currentDate.getDay();
-// document.writeln(`Today is: ${dayNames[currentDay].slice(0, 3)}`); 
+// document.writeln(`Today is: ${dayNames[currentDay].slice(0, 3)}`);
 document.writeln("<h3>Done</h3>");
 
 // ******* QUESTION-4 ************
@@ -324,7 +324,7 @@ let dayNames = [
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saturday"
+  "Saturday",
 ];
 let currentDay = currentDate.getDay();
 let day = dayNames[currentDay].slice(0, 3);
@@ -336,7 +336,7 @@ if (day === "Sat" || day === "Sun") {
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-5 ************
 document.writeln("<h2>Question-5</h2>");
-let   date = currentDate.getDate();
+let date = currentDate.getDate();
 if (date < 16) {
   document.writeln("First fifteen days of the month");
 } else {
@@ -346,8 +346,8 @@ document.writeln("<h3>Done</h3>");
 
 // ******* QUESTION-6 ************
 document.writeln("<h2>Question-6</h2>");
-let current_Date = new Date()
-let milisecond = current_Date.getTime()
+let current_Date = new Date();
+let milisecond = current_Date.getTime();
 let minutes = milisecond / 60000;
 
 document.writeln("Current Date: " + current_Date + "<br>");
@@ -375,27 +375,90 @@ document.writeln(laterDate);
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-9 ************
 document.writeln("<h2>Question-9</h2>");
+// let ramdanStart = new Date("June 18, 2015");
+// let today = new Date();
+// let difference = today - ramdanStart;
+// let past_days = Math.floor(difference / (1000 * 60 * 60 * 24));
+// alert(past_days + " days have passed since 1st Ramdan , 2015")
+
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-10 ************
 document.writeln("<h2>Question-10</h2>");
+let refrence_Date = new Date("December 05, 2015 22:50:16");
+let begining2015 = new Date("January 01, 2015");
+let difference = refrence_Date - begining2015;
+let last_difference = Math.floor(difference / (1000 * 60));
+document.writeln(
+  "On reference date " +
+    refrence_Date +
+    " " +
+    last_difference +
+    " seconds had passed since beginning of 2015",
+);
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-11 ************
 document.writeln("<h2>Question-11</h2>");
+
+let currentDateTime = new Date();
+let oneHourAgo = new Date(currentDateTime.getTime() - 60 * 60 * 1000);
+document.writeln(
+  "Current date: " +
+    currentDateTime +
+    "<br>" +
+    "1 hour ago, it was: " +
+    oneHourAgo,
+);
 document.writeln("<h3>Done</h3>");
+
 // ******* QUESTION-12 ************
 document.writeln("<h2>Question-12</h2>");
+let $Date = new Date();
+let current$Date = new Date();
+current$Date.setFullYear(current$Date.getFullYear() - 100);
+document.writeln(`current date: ${$Date} 100 years back: ${current$Date}`);
+console.log(current$Date);
+
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-13 ************
 document.writeln("<h2>Question-13</h2>");
+// let birth_year = new Date ()
+// let age = +prompt("Enter your age: ")
+// let find_birth = birth_year.getFullYear() - age
+// document.writeln(`Your age is: ${age}
+//   Your birth year is ${find_birth}
+//   `)
+
 document.writeln("<h3>Done</h3>");
+
 // ******* QUESTION-14 ************
 document.writeln("<h2>Question-14</h2>");
+let customerName = prompt("Enter your name:");
+let customer_Month = prompt("Enter your Current Month:");
+let Num_Units = parseFloat(prompt("Enter your Number of units:"));
+let Charges_unit = parseFloat(prompt("Enter your charges per unit:"));
+let net_Amount = Num_Units * Charges_unit;
+let late_Payment = 350;
+let gross_Amount = net_Amount + late_Payment;
+document.writeln(
+  `<h3>K-Electric Bill</h3>
+  Customer Name: <b>${customerName}</b> <br>
+  Current Month: <b>${customer_Month}</b> <br>
+  Number of Units: <b>${Num_Units}</b> <br>
+  Charges per Unit: <b>${Charges_unit}</b> <br>
+  Net Amount Payable (within Due Date): <b>${net_Amount}</b> <br>
+  Late Payment Surcharge: <b>${late_Payment}</b> <br>
+  Gross Amount Payable (after Due Date) : <b>${gross_Amount}</b> <br>
+  `,
+);
+
 document.writeln("<h3>Done</h3>");
 
 // ********** ASSIGNMENT # 31 - 34  Completed!! **********
 // ----------------------------------------------------------
 //////////////////////////////////
-document.writeln( `<br> /////////////////////////////completed assignment 31 - 34///////////////////////////////////////////`)
+document.writeln(
+  `<br> /////////////////////////////completed assignment 31 - 34///////////////////////////////////////////`,
+);
 
 // ********** ASSIGNMENT # 35 - 38 **********
 // ******* QUESTION- ************
@@ -405,7 +468,9 @@ document.writeln("<h3>Done</h3>");
 // ********** ASSIGNMENT # 35 - 38 Completed!! **********
 // ----------------------------------------------------------
 //////////////////////////////////
-document.writeln( `<br> /////////////////////////////completed assignment 35 - 38///////////////////////////////////////////`)
+document.writeln(
+  `<br> /////////////////////////////completed assignment 35 - 38///////////////////////////////////////////`,
+);
 
 // ********** ASSIGNMENT # 39 - 42 **********
 // ******* QUESTION- ************
@@ -415,6 +480,6 @@ document.writeln("<h3>Done</h3>");
 // ********** ASSIGNMENT # 39 - 42 Completed!! **********
 // ----------------------------------------------------------
 //////////////////////////////////
-document.writeln( `<br> /////////////////////////////completed assignment 39 - 42///////////////////////////////////////////`)
-
-
+document.writeln(
+  `<br> /////////////////////////////completed assignment 39 - 42///////////////////////////////////////////`,
+);
