@@ -463,6 +463,199 @@ document.writeln(
 // ********** ASSIGNMENT # 35 - 38 **********
 // ******* QUESTION-1 ************
 document.writeln("<h2>Question-1</h2>");
+function _time() {
+  let latestDate = new Date();
+  document.writeln(latestDate);
+}
+_time();
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-2 ************
+document.writeln("<h2>Question-2</h2>");
+// function greet(message, userName, firstname, lastname) {
+//   if (!userName) {
+//     firstname = prompt("Enter your first name");
+//     lastname = prompt("Enter your last name");
+//     userName = firstname + " " + lastname;
+//   }
+//   console.log(message + " " + userName);
+// }
+// greet("Welcome!!");
+
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-3 ************
+document.writeln("<h2>Question-3</h2>");
+// function add (num1,num2){
+//   return (num1 + num2)
+// }
+// let number1 = +prompt("Enter the number 1")
+// let number2 = +prompt("Enter the number 2")
+// let result = add(number1 , number2)
+// console.log(result);
+
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-4 ************
+document.writeln("<h2>Question-4  </h2>");
+document.writeln("<h3>Calculator:</h3>");
+// function calculator(num1, num2, operator) {
+//   operator = prompt(`Enter the operator which are given below:
+// + → addition
+// - → subtraction
+// * → multiplication
+// / → division `);
+//   num1 = +prompt("Enter the first number ");
+//   num2 = +prompt("Enter the second number ");
+//   if (operator == "+") {
+//     console.log(num1 + num2);
+//   } else if (operator == "-") {
+//     console.log(num1 - num2);
+//   } else if (operator == "*") {
+//     console.log(num1 * num2);
+//   } else if (operator == "/") {
+//     console.log(num1 / num2);
+//   } else {
+//     console.log("the function was'nt work!!");
+//   }
+// }
+// calculator();
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-5 ************
+document.writeln("<h2>Question-5</h2>");
+// function multiplication(num1, num2) {
+//   return num1 * num2;
+// }
+// let result = multiplication(2,3);
+// console.log(result);
+
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-6 ************
+document.writeln("<h2>Question-6</h2>");
+function factorial(num) {
+  let result = 1;
+  for (let i = num; i >= 1; i--) {
+    result = result * i;
+  }
+  return result;
+}
+console.log(factorial(9));
+
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-7 ************
+document.writeln("<h2>Question-7</h2>");
+// function counting(num1, num2) {
+//   num1 = +prompt("Enter the start number of counting!");
+//   num2 = +prompt("Enter the end number of the counting!");
+//   for (let i = num1; i <= num2; i++) {
+//     console.log(i);
+//   }
+// }
+// counting();
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-8 ************
+document.writeln("<h2>Question-8</h2>");
+// function hypotenuse(base, perpendicular) {
+//   base = +prompt(
+//     "Enter the number which would be the base of right angle triangle",
+//   );
+//   perpendicular = +prompt(
+//     "Enter the number which would be the perpendicular of right angle triangle",
+//   );
+
+//   function triangle(square, root) {
+//     square = base ** 2 + perpendicular ** 2;
+//     root = Math.floor(Math.sqrt(square));
+//     console.log(root);
+//   }
+//   triangle();
+// }
+// hypotenuse();
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-9 ************
+document.writeln("<h2>Question-9</h2>");
+function areaoftriangle(width, height) {
+  return width * height;
+}
+let w = 5;
+let h = 2;
+let square = areaoftriangle(w, h);
+console.log(square);
+
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-10 ************
+document.writeln("<h2>Question-10</h2>");
+// function palindrome(name) {
+//   name = prompt(
+//     "Enter a palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam. ",
+//   );
+//   if (name == name.split("").reverse().join("")) {
+//     console.log("This word is Palindrome!");
+//   } else {
+//     console.log("It wasn't palindrome!");
+//   }
+// }palindrome()
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-11 ************
+document.writeln("<h2>Question-11</h2>");
+function uppercase(str) {
+  let words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+  }
+
+  return words.join(" ");
+}
+let myString = "the quick brown fox";
+let output = uppercase(myString)
+console.log(output);
+
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-12 ************
+document.writeln("<h2>Question-12</h2>");
+
+
+
+function findLongestWord(str) {
+  // Step 1: Split string into words
+  let words = str.split(" ");
+  
+  // Step 2: Initialize longest word as the first word
+  let longestWord = words[0];
+
+  // Step 3: Loop through each word
+  for (let i = 1; i < words.length; i++) {
+    if (words[i].length > longestWord.length) {
+      longestWord = words[i];
+    }
+  }
+
+  // Step 4: Return the longest word
+  return longestWord;
+}
+
+// Example usage:
+// let myString = "Web Development Tutorial";
+let result = findLongestWord(myString);
+console.log(result); // Output: "Development"
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-13 ************
+document.writeln("<h2>Question-13</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-14 ************
+document.writeln("<h2>Question-14</h2>");
+document.writeln("<h3>Done</h3>");
+
+// ********** ASSIGNMENT # 35 - 38 Completed!! **********
+// ----------------------------------------------------------
+//////////////////////////////////
+document.writeln(
+  `<br> /////////////////////////////completed assignment 35 - 38///////////////////////////////////////////`,
+);
+
+// ********** ASSIGNMENT # 39 - 42 **********
+// ******* QUESTION- ************
+document.writeln("<h2>Question-</h2>");
+document.writeln("<h3>Done</h3>");
+// ******* QUESTION-1 ************
+document.writeln("<h2>Question-1</h2>");
 
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-2 ************
@@ -504,19 +697,6 @@ document.writeln("<h3>Done</h3>");
 // ******* QUESTION-14 ************
 document.writeln("<h2>Question-14</h2>");
 document.writeln("<h3>Done</h3>");
-
-// ********** ASSIGNMENT # 35 - 38 Completed!! **********
-// ----------------------------------------------------------
-//////////////////////////////////
-document.writeln(
-  `<br> /////////////////////////////completed assignment 35 - 38///////////////////////////////////////////`,
-);
-
-// ********** ASSIGNMENT # 39 - 42 **********
-// ******* QUESTION- ************
-document.writeln("<h2>Question-</h2>");
-document.writeln("<h3>Done</h3>");
-
 // ********** ASSIGNMENT # 39 - 42 Completed!! **********
 // ----------------------------------------------------------
 //////////////////////////////////
