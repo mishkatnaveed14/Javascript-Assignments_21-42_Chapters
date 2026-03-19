@@ -595,52 +595,67 @@ document.writeln("<h2>Question-10</h2>");
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-11 ************
 document.writeln("<h2>Question-11</h2>");
-function uppercase(str) {
-  let words = str.split(" ");
-  for (let i = 0; i < words.length; i++) {
-    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
-  }
+// function uppercase(str) {
+//   let words = str.split(" ");
+//   for (let i = 0; i < words.length; i++) {
+//     words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+//   }
 
-  return words.join(" ");
-}
-let myString = "the quick brown fox";
-let output = uppercase(myString)
-console.log(output);
+//   return words.join(" ");
+// }
+// let myString = "the quick brown fox";
+// let output = uppercase(myString)
+// console.log(output);
 
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-12 ************
 document.writeln("<h2>Question-12</h2>");
 
+// let string = "Web Development Tutorial";
 
+// function find_longest_word(str) {
 
-function findLongestWord(str) {
-  // Step 1: Split string into words
-  let words = str.split(" ");
-  
-  // Step 2: Initialize longest word as the first word
-  let longestWord = words[0];
+//   let words = str.split(" ");
+//   let longestword = words[0];
+//   for (let i = 1; i < words.length; i++) {
+//     if (words[i].length > longestword.length) {
+//       longestword = words[i];
+//     }
+//   }
+//   return longestword;
+// }
+// let result = find_longest_word(string)
+// console.log(result);
 
-  // Step 3: Loop through each word
-  for (let i = 1; i < words.length; i++) {
-    if (words[i].length > longestWord.length) {
-      longestWord = words[i];
-    }
-  }
-
-  // Step 4: Return the longest word
-  return longestWord;
-}
-
-// Example usage:
-// let myString = "Web Development Tutorial";
-let result = findLongestWord(myString);
-console.log(result); // Output: "Development"
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-13 ************
 document.writeln("<h2>Question-13</h2>");
+function countletter(str, letter) {
+  let word = [0];
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === letter) {
+      word++;
+    }
+  }
+  return word;
+}
+let result = countletter("JSResources.com", "o");
+console.log(result);
+
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-14 ************
 document.writeln("<h2>Question-14</h2>");
+document.writeln("<h3>The Geometrizer</h3>");
+function calcCircumference(radius) {
+  let circumference = 2 * Math.PI * radius;
+  document.writeln("The Circumference is " + circumference + "<br>");
+}
+function calcArea(radius) {
+  let area = Math.PI * radius * radius;
+  document.writeln("The area is " + area);
+}
+calcCircumference(5);
+calcArea(5);
 document.writeln("<h3>Done</h3>");
 
 // ********** ASSIGNMENT # 35 - 38 Completed!! **********
@@ -651,30 +666,133 @@ document.writeln(
 );
 
 // ********** ASSIGNMENT # 39 - 42 **********
-// ******* QUESTION- ************
-document.writeln("<h2>Question-</h2>");
-document.writeln("<h3>Done</h3>");
 // ******* QUESTION-1 ************
 document.writeln("<h2>Question-1</h2>");
+function power(a, b) {
+  let result = 1;
+  for (let i = 1; i <= b; i++) {
+    result = result * a;
+  }
+  return result;
+}
+console.log(power(2, 3));
 
 document.writeln("<h3>Done</h3>");
+
 // ******* QUESTION-2 ************
 document.writeln("<h2>Question-2</h2>");
+
+// function Leapyear(year){
+//   year = prompt("Enter the year?")
+//   if (year % 4 === 0){
+// alert("leap year");
+
+// }else{
+//  alert("Not a leap year!!");
+// }
+// }
+// Leapyear()
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-3 ************
 document.writeln("<h2>Question-3</h2>");
+function triangle(a, b, c) {
+  let side = (a + b + c) / 2;
+  console.log(side);
+  function areaoftriangle() {
+    let area = side * (side - a) * (side - b) * (side - c);
+    console.log(area);
+  }
+  areaoftriangle();
+}
+triangle(3, 2, 2);
+
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-4 ************
 document.writeln("<h2>Question-4  </h2>");
+// function mainfunction() {
+//   let sub1 = +prompt("Enter the marks obtained in subject 1: ");
+//   let sub2 = +prompt("Enter the marks obtained in subject 2: ");
+//   let sub3 = +prompt("Enter the marks obtained in subject 3: ");
+//   let totalMarks = 300;
+//   function average() {
+//     let sub_avg = (sub1 + sub2 + sub3) / 3;
+//     return sub_avg;
+//   }
+//   function percentage(sub_avg) {
+//   let sub_percentage = (sub_avg / totalMarks) * 100;
+//   return sub_percentage;
+//   }
+//   let avgmarks = average();
+//   let percentmarks = percentage(avgmarks);
+//   console.log("The average marks of student is: " + avgmarks);
+//   console.log("The percentage of given marks is: " + percentmarks + "%");
+// }
+// mainfunction();
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-5 ************
 document.writeln("<h2>Question-5</h2>");
+// function Indexof(str, chr) {
+//   str = prompt("Enter the word!!");
+//   chr = prompt("Enter the character which would be present in the string...");
+//   for (let i = 0; i < str.length; i++) {
+//     index = word[i];
+//     if (str[i] === chr) {
+//       console.log("Character found at index: " + i);
+//       return;
+//     }
+//   }
+
+//   console.log("-1");
+// }
+// Indexof();
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-6 ************
 document.writeln("<h2>Question-6</h2>");
+// function removeVowels(str) {
+//   str = prompt("Enter the sentence!!");
+//   let result = str.replace(/[aeiou]/gi, "");
+//   console.log(result);
+// }
+// removeVowels();
+
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-7 ************
 document.writeln("<h2>Question-7</h2>");
+function pairsvowel(text) {
+  text = prompt("Enter a line of text");
+  let count = 0;
+  for (let i = 0; i < text.length - 1; i++) {
+    let isfirst = text[i].toLowerCase()
+    let issecond = text[i + 1].toLowerCase()
+    let firstchar = false;
+    let secondchar = false;
+    switch (isfirst) {
+      case "a":
+      case "e":
+      case "i":
+      case "o":
+      case "u":
+        firstchar = true;
+        break;
+    }
+    switch (issecond) {
+      case "a":
+      case "e":
+      case "i":
+      case "o":
+      case "u":
+        secondchar = true;
+        break;
+    }
+      if (firstchar && secondchar) {
+    count++;
+    console.log("Found vowel pair:", text[i] + text[i + 1]);
+  }
+  }
+
+  // console.log("Total consecutive vowel pairs:", count);
+}
+pairsvowel()
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-8 ************
 document.writeln("<h2>Question-8</h2>");
@@ -685,18 +803,7 @@ document.writeln("<h3>Done</h3>");
 // ******* QUESTION-10 ************
 document.writeln("<h2>Question-10</h2>");
 document.writeln("<h3>Done</h3>");
-// ******* QUESTION-11 ************
-document.writeln("<h2>Question-11</h2>");
-document.writeln("<h3>Done</h3>");
-// ******* QUESTION-12 ************
-document.writeln("<h2>Question-12</h2>");
-document.writeln("<h3>Done</h3>");
-// ******* QUESTION-13 ************
-document.writeln("<h2>Question-13</h2>");
-document.writeln("<h3>Done</h3>");
-// ******* QUESTION-14 ************
-document.writeln("<h2>Question-14</h2>");
-document.writeln("<h3>Done</h3>");
+
 // ********** ASSIGNMENT # 39 - 42 Completed!! **********
 // ----------------------------------------------------------
 //////////////////////////////////
