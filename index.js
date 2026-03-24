@@ -758,50 +758,96 @@ document.writeln("<h2>Question-6</h2>");
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-7 ************
 document.writeln("<h2>Question-7</h2>");
-function pairsvowel(text) {
-  text = prompt("Enter a line of text");
-  let count = 0;
-  for (let i = 0; i < text.length - 1; i++) {
-    let isfirst = text[i].toLowerCase()
-    let issecond = text[i + 1].toLowerCase()
-    let firstchar = false;
-    let secondchar = false;
-    switch (isfirst) {
-      case "a":
-      case "e":
-      case "i":
-      case "o":
-      case "u":
-        firstchar = true;
-        break;
-    }
-    switch (issecond) {
-      case "a":
-      case "e":
-      case "i":
-      case "o":
-      case "u":
-        secondchar = true;
-        break;
-    }
-      if (firstchar && secondchar) {
-    count++;
-    console.log("Found vowel pair:", text[i] + text[i + 1]);
-  }
-  }
-
-  // console.log("Total consecutive vowel pairs:", count);
-}
-pairsvowel()
+// function pairsvowel(text) {
+//   text = prompt("Enter a line of text");
+//   let count = 0;
+//   for (let i = 0; i < text.length - 1; i++) {
+//     let isfirst = text[i].toLowerCase()
+//     let issecond = text[i + 1].toLowerCase()
+//     let firstchar = false;
+//     let secondchar = false;
+//     switch (isfirst) {
+//       case "a":
+//       case "e":
+//       case "i":
+//       case "o":
+//       case "u":
+//         firstchar = true;
+//         break;
+//     }
+//     switch (issecond) {
+//       case "a":
+//       case "e":
+//       case "i":
+//       case "o":
+//       case "u":
+//         secondchar = true;
+//         break;
+//     }
+//       if (firstchar && secondchar) {
+//     count++;
+//     console.log("Found vowel pair:", text[i] + text[i + 1]);
+//   }
+//   }
+// }
+// pairsvowel()
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-8 ************
 document.writeln("<h2>Question-8</h2>");
+
+// let input_km = +prompt("Enter the distance between two cities in km: ")
+// function distance_meter(meter) {
+
+// meter = input_km * 1000
+// console.log("The distance between two cities in meter is : " + meter);
+// }distance_meter()
+
+// function distance_feet(feet){
+// feet = input_km * 3280.84
+// console.log("The distance between two cities in feet is : " + feet);
+// }distance_feet()
+
+// function distance_inches(inches){
+// inches = input_km * 39370.1
+// console.log("The distance between two cities in inches is : " + inches);
+// }distance_inches()
+
+// function distance_cm(centimeters){
+// centimeters = input_km * 1000
+// console.log("The distance between two cities in centimeters is : " + centimeters);
+// }distance_cm()
+
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-9 ************
 document.writeln("<h2>Question-9</h2>");
+
+// let hours = +prompt("How much Hours do ypu work??")
+// let overtime = 0
+// if (hours > 40){
+//   overtime = (hours - 40) * 12
+// }else{
+//   overtime = 0
+// }
+// document.writeln("overtime pay = Rs. " + overtime);
+
 document.writeln("<h3>Done</h3>");
 // ******* QUESTION-10 ************
 document.writeln("<h2>Question-10</h2>");
+
+// let amount = +prompt("Enter amount in hundreds");
+// amount * 100;
+
+// let hundred = Math.floor(amount / 100);
+// let rem = amount % 100;
+
+// let fifty = Math.floor(rem / 50);
+// rem = rem % 50;
+
+// let ten = Math.floor(rem / 10);
+
+// console.log("100 notes:", hundred);
+// console.log("50 notes:", fifty);
+// console.log("10 notes:", ten);
 document.writeln("<h3>Done</h3>");
 
 // ********** ASSIGNMENT # 39 - 42 Completed!! **********
